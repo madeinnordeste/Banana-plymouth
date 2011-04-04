@@ -6,7 +6,7 @@ Tema para plymouth
 
 1 - Mova a pasta 'banana' para '/lib/plymouth/themes/banana'
 
-	sudo mv banana /lib/plymouth/themes/
+	sudo cp banana /lib/plymouth/themes/
 
 2 - Instale o tema com o comando:
 
