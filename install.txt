@@ -1,0 +1,20 @@
+To Ubuntu install follow the steps:
+
+1- Copy 'banana' folder to:
+/lib/plymouth/themes/banana
+
+2 - install the theme with command:
+sudo update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/banana/banana.plymouth 100
+
+3 - set theme as default:
+sudo update-alternatives --config default.plymouth
+( select 'banana' theme)
+
+
+4 - update boot image
+sudo update-initramfs -u
+
+
+5- reboot and see banana theme
+
+
