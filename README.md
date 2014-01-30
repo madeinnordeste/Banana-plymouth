@@ -23,3 +23,7 @@ Tema para plymouth
 5- Reinicie e veja o tema!
 
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/madeinnordeste/banana-plymouth/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
