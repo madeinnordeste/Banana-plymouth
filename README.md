@@ -4,13 +4,14 @@ Tema para plymouth
 
 ## Para instalar siga os passos:
 
-1 - Mova a pasta 'banana' para '/lib/plymouth/themes/banana'
+1 - Mova a pasta 'banana' para '/usr/share/plymouth/themes/banana'
 
-	sudo cp banana /lib/plymouth/themes/
+	sudo cp -r banana /usr/share/plymouth/themes/
 
 2 - Instale o tema com o comando:
 
-	sudo update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/banana/banana.plymouth 100
+	sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/banana/banana.plymouth 100
+
 
 3 - Configure o tema como padrão ( escolha o numero do tema )
 	
@@ -20,10 +21,12 @@ Tema para plymouth
 	
 	sudo update-initramfs -u
 
-5- Reinicie e veja o tema!
+5 - Reinicie e veja o tema!
 
 
+### Para testar
 
+	sudo apt install plymouth-x11
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/madeinnordeste/banana-plymouth/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+	sudo plymouthd ; sudo plymouth --show-splash ; for ((I=0; I<10; I++)); do sleep 1 ; sudo plymouth --update=test$I ; done ; sudo plymouth --quit
 

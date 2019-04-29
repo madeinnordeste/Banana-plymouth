@@ -1,8 +1,8 @@
 [Plymouth Theme]
 Name=Banana
-Description=A theme that features a blank background with a logo.
+Description=A theme banana to plymount.
 ModuleName=script
 
 [script]
-ImageDir=/lib/plymouth/themes/banana
-ScriptFile=/lib/plymouth/themes/banana/banana.script
+ImageDir=/usr/share/plymouth/themes/banana
+ScriptFile=/usr/share/plymouth/themes/banana/banana.script
